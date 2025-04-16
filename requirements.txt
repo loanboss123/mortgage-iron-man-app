@@ -1,0 +1,7 @@
+Flask
+pytesseract
+pdfplumber
+transformers
+torch
+flask-cors
+openai
