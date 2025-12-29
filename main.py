@@ -5,6 +5,10 @@ import pytesseract
 from document_utils import classify_docs, validate_docs, extract_income
 
 app = Flask(__name__)
+@app.route("/")
+def home():
+    return send_from_directory("templates", "index.html")
+
 CORS(app)
 
 @app.route('/')
