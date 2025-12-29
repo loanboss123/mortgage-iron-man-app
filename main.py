@@ -11,10 +11,6 @@ def home():
 
 CORS(app)
 
-@app.route('/')
-def index():
-    return "Mortgage Automation API is running."
-
 @app.route('/upload', methods=['POST'])
 def upload_documents():
     files = request.files.getlist("documents")
